@@ -1,0 +1,116 @@
+﻿@model Web_ExclusivedFood.Models.Producto.PedidoProducto
+
+@{
+    ViewBag.Title = "CompraPaso1";
+}
+
+<link href="~/Content/css/ProductStep1.css" rel="stylesheet" />
+
+@using (Html.BeginForm("CompraPaso2", "Producto", FormMethod.Post))
+{
+    @Html.AntiForgeryToken() @*Protección CSRF*@
+
+    <!-- datos para enviar al controlador -->
+    <input type="hidden" name="IdProducto" value="@Model.IdProducto" />
+    <input type="hidden" name="Nombre" value="@Model.Nombre" />
+    <input type="hidden" name="Precio" value="@Model.Precio" />
+    <input type="hidden" name="PrecioTotal" value="@Model.PrecioTotal" />
+    <input type="hidden" name="Cantidad" value="@Model.Cantidad" />
+    <input type="hidden" name="url_imagen" value="@Model.url_imagen" />
+    <input type="hidden" name="Direccion" id="location-hiden" />
+    <input type="hidden" name="NumeroTelefonico" id="number-hiden" />
+
+    <section class="section">
+        <div class="steps">
+            <div class="step1">
+                <img src="~/Content/Icons/icons8-location-24.png" alt="Step 1" class="icon" />
+                <div class="description-step1">
+                    <h2>Paso 1</h2>
+                    <p>Direccion</p>
+                </div>
+            </div>
+
+            <div class="diving-line">
+
+            </div>
+            <div class="next-step">
+                <img src="~/Content/Icons/icons8-card-payment-24.png" alt="Step 2" class="icon" />
+                <div class="description-nextStep">
+                    <h2>Paso 2</h2>
+                    <p>Pago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-direction">
+
+            <p>Seleccionar Direccion</p>
+
+            <div class="content-direction">
+                <div class="description">
+                    <div class="home-text">
+                        <p>Casa</p>
+                    </div>
+                    <!-- Inputs manejados por javaScript -->
+                    <input id="input-location" type="text" disabled name="tbMensaje" value="2118 Peru  Lima. Syracuse, av 35624" />
+                    <input id="input-number" type="text" disabled name="tbNumero" value="992676986" />
+
+                </div>
+
+                <button type="button" id="edit-info" class="button-edit"> <img src="~/Content/Icons/icons8-edit-24.png" alt="Edit" /> </button>
+            </div>
+
+            <div class="content-buttons">
+                <button class="button-back" type="button" onclick="window.history.back();" >Atras</button>
+                <button class="button-next" type="submit">Siguiente</button>
+            </div>
+        </div>
+    </section>
+}
+
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        guardarValores();
+    });
+
+    //manejar evento de habilitacion de los inputs
+
+    const botonEditar = document.getElementById('edit-info');
+    const inputUbicacion = document.getElementById('input-location');
+    const inputNumeroTelefonico = document.getElementById('input-number');
+
+
+    botonEditar.addEventListener('click', function () {
+
+        const ubicacion = inputUbicacion.disabled; //se obtiene el estado del input
+        inputUbicacion.disabled = !ubicacion; //se modifica el estado del input
+
+        const telefono = inputNumeroTelefonico.disabled;
+        inputNumeroTelefonico.disabled = !telefono;
+
+        if (!inputUbicacion.disabled) {
+            inputUbicacion.focus()
+
+        }
+
+        //modificar la imagen del button basado en el estado del input
+        const img = botonEditar.querySelector('img');
+        img.src = inputUbicacion.disabled ? '/Content/Icons/icons8-edit-24.png' : '/Content/Icons/icons8-check-24.png';
+
+        guardarValores();
+    });
+
+
+    function guardarValores() {
+
+        const locationValue = document.getElementById("input-location");
+        const numberValue = document.getElementById("input-number");
+
+        document.getElementById("location-hiden").value = locationValue.value;
+        document.getElementById("number-hiden").value = numberValue.value;
+    }
+
+
+</script>

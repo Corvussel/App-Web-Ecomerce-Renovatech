@@ -1,0 +1,182 @@
+﻿@model Web_ExclusivedFood.Models.Producto.Productos
+@{
+    ViewBag.Title = "CarritoCompras";
+}
+  
+<link href="~/Content/css/ProductCart.css" rel="stylesheet" />
+
+<section class="cart-section">
+
+    @*seleccion de numero de compra*@
+
+    <div class="cart-container">
+
+        <header class="cart-header">
+            <h2>Carrito</h2>
+        </header>
+
+        <article class="cart-product">
+            <div class="product-image">
+                <img src="@Model.url_imagen" alt="@Model.Nombre" />
+            </div>
+
+            <div class="product-info">
+                <h3>@Model.Nombre</h3>
+            </div>
+
+            <div class="product-price-counter">
+                <div class="counter">
+
+                    <button id="disminuir-cantidad">-</button>
+                    <label id="cantidad-producto">1</label>
+                    <button id="aumentar-cantidad">+</button>
+
+                </div>
+                <label>S/.</label>
+                <label id="precio-producto" class="price">@Model.Precio</label>
+            </div>
+        </article>
+
+    </div>
+
+    @*resumen de producto*@
+    @using (Html.BeginForm("CompraPaso1", "Producto", FormMethod.Post))
+    {
+
+        <input type="hidden" name="IdProducto" value="@Model.IdProducto" />
+        <input type="hidden" name="Nombre" value="@Model.Nombre" />
+        <input type="hidden" name="Precio" value="@Model.Precio" />
+        <input type="hidden" name="url_imagen" value="@Model.url_imagen" />
+        <input type="hidden" name="Cantidad" id="cantidad-hidden" />
+        <input type="hidden" name="PrecioTotal" id="precio-hidden" />
+
+
+        <aside class="cart-summary">
+            <h3>Resumen del pedido</h3>
+            <div class="content-summary">
+                <div class="summary">
+                    <div>
+                        <p class="description">Subtotal</p>
+                    </div>
+                    <div>
+                        <p>S/</p>
+                        <p id="sub-total" class="price">@Model.Precio</p>
+                    </div>
+                </div>
+                <div class="summary">
+                    <div>
+                        <p class="description">Impuesto estimado</p>
+                    </div>
+                    <div>
+                        <p>S/</p>
+                        <p id="impuesto-producto" class="price"></p>
+                    </div>
+                </div>
+                <div class="summary">
+                    <div>
+                        <p class="description">Envío estimado</p>
+                    </div>
+                    <div>
+                        <p>S/</p>
+                        <p class="price">4</p>
+                    </div>
+                </div>
+                <div class="summary">
+                    <div>
+                        <p class="description">Total</p>
+                    </div>
+                    <div>
+                        <p>S/</p>
+                        <p id="precio-neto" class="price"></p>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Caja</button>
+        </aside>
+    }
+
+</section>
+
+@*escripts para manejar interaccion con la vista*@
+
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        ActualizarPrecioProducto(1);
+    });
+
+    document.getElementById('disminuir-cantidad').addEventListener('click', () => {
+
+        ControlarUnidadProducto(false);
+
+    });
+
+    document.getElementById('aumentar-cantidad').addEventListener('click', function () {
+
+        ControlarUnidadProducto(true);
+
+    });
+
+</script>
+
+
+<script>
+
+    // precio del producto
+    const precioProducto = parseInt(document.getElementById('precio-producto').textContent);
+
+    // 18% de impuesto
+    const impuestoPorcentaje = 0.18;
+
+
+    function ControlarUnidadProducto(aumentar) {
+
+        try {
+
+            const cantidadElemento = document.getElementById('cantidad-producto');
+
+            let nuevaCantidad = parseInt(cantidadElemento.textContent);
+
+            // incrementa o decrementa la cantidad segun el valor booleano
+            nuevaCantidad = aumentar ? ++nuevaCantidad : --nuevaCantidad;
+
+            // Valida que la cantidad este entre 0 y 10
+            const cantidadValidada = Math.min(10, Math.max(1, nuevaCantidad));
+
+            // Actualizar la cantidad en el HTML
+            cantidadElemento.textContent = cantidadValidada;
+
+            ActualizarPrecioProducto(cantidadValidada);
+
+        } catch (e) {
+
+        }
+    }
+
+    function ActualizarPrecioProducto(cantidad) {
+
+        // Precio total sin impuestos
+        const precioTotal = precioProducto * cantidad;
+
+        // calculo del impuesto
+        const impuesto = precioTotal * impuestoPorcentaje;
+
+        // Precio neto con impuesto
+        const precioNeto = precioTotal + impuesto;
+
+        // se actualiza los valores en el HTML
+        document.getElementById('precio-producto').textContent = precioTotal;
+        document.getElementById('sub-total').textContent = precioTotal;
+        document.getElementById('impuesto-producto').textContent = impuesto.toFixed(2);
+        document.getElementById('precio-neto').textContent = precioNeto.toFixed(2);
+
+        //datos para el campo oculto
+        document.getElementById('cantidad-hidden').value = cantidad;
+        document.getElementById('precio-hidden').value = precioNeto.toFixed(2);
+    }
+
+</script>
+
+

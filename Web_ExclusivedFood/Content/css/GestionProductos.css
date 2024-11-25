@@ -1,0 +1,123 @@
+﻿body {
+}
+
+  
+/* gestion de producto*/
+.product-container {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 10px;
+    gap: 20px;
+}
+
+.product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+    .product-card:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+    }
+
+.product-img-container {
+    height: 180px; 
+    width: 100%;  
+    background-color: #f8f9fa;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img {
+    max-height: 100%;  
+    max-width: 100%;  
+    object-fit: contain;  
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.btn-primary, .btn-danger, .btn-warning {
+    border-radius: 50px;  
+    margin: 0 5px; 
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3; 
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;  
+    }
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+    .btn-warning:hover {
+        background-color: #e0a800;  
+    }
+  
+    
+/* registro-edicion de producto*/
+
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    height: 250px;
+    border-radius: 8px;
+    border: 2px dashed #007bff;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-preview {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px; 
+}
+
+.input-select-file {
+    max-width: 90%;
+    height: 30px;
+    background: #02436fcc;
+    color: white;
+    font-size: 14px;
+}
+ 

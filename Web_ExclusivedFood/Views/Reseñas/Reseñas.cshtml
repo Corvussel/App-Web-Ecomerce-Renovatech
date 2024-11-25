@@ -1,0 +1,119 @@
+﻿@model Web_ExclusivedFood.Models.Producto.Reseña
+@{
+    ViewBag.Title = "Reseñas";
+}
+
+<link href="~/Content/css/Reviews.css?v=1.2" rel="stylesheet" />
+
+<header class="reviews-header">
+    <div class="container">
+        <h1 class="mb-3">Mis Reseñas</h1>
+        <p>Has escrito @Model.TotalValoracion reseñas con una valoración media de @Model.valoracionPromedio.ToString("0.0") estrellas</p>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Estadísticas de reseñas -->
+    <div class="reviews-stats">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Resumen de valoraciones</h3>
+                <div class="d-flex align-items-center mb-3">
+                    <h2 class="mb-0 me-2">@Model.valoracionPromedio.ToString("0.0")</h2>
+                    <div class="stars">
+                        @{
+                            int maxStar = 5;
+                            double filledStar = Model.valoracionPromedio;
+                            double emptyStar = maxStar - filledStar;
+
+                            for (int i = 0; i < filledStar; i++)
+                            { 
+                                <i class="fas fa-star"></i>
+                            }
+
+                            for (int i = 0; i < emptyStar; i++)
+                            {
+                                <i class="far fa-star"></i>
+                            }
+
+                        }
+                    </div>
+                </div>
+                <p>Basado en @Model.TotalValoracion reseñas</p>
+            </div>
+            <div class="col-md-8">
+                @foreach (var valoracion in Model.ValoracionesPorcentajes)
+                {
+                    <div class="star-rating-reviews">
+
+                        <!-- tipo de valoracion 1-5 estrellas-->
+                        <span class="star-label"> @valoracion.Key <i class="fas fa-star"></i></span>
+
+                        <!-- Porcentajde cada valoracion -->
+                        <div class="progress flex-grow-1">
+                            <div class="progress-bar" style="width: @valoracion.Value%"></div>
+                        </div>
+
+                        <!-- numero de vlaoraciones -->
+                        @{ double numeroValoracion = (valoracion.Value / 100) * @Model.TotalValoracion; }
+                        <span class="ms-2">@numeroValoracion.ToString("0")</span>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Filtros -->
+    <div class="filter-buttons gap-2">
+        <button class="btn btn-custom-primary me-2">Todas</button>
+        <button class="btn btn-custom-secondary me-2">5 estrellas</button>
+        <button class="btn btn-custom-secondary me-2">4 estrellas</button>
+        <button class="btn btn-custom-secondary me-2">3 estrellas</button>
+    </div>
+
+    <!-- Lista de reseñas -->
+    <div class="reviews-list">
+
+        <!-- Reseña  -->
+        @foreach (var r in Model.ListaReseñas)
+        {
+            <div class="review-item">
+                <div class="review-product">
+                    <img src="@r.UrlImagenProducto" alt="@r.NombreProducto" class="review-product-img shadow-sm">
+                    <div>
+                        <h4>@r.NombreProducto</h4>
+                    </div>
+                </div>
+                <div id="star" class="stars">
+                    @{
+                        int maxStars = 5; // Máximo de 5 estrellas
+                        int filledStars = r.Calificacion; // Calificación del producto
+                        int emptyStars = maxStars - filledStars; // Estrellas vacías restantes
+
+                        //  las estrellas llenas
+                        for (int i = 0; i < filledStars; i++)
+                        {
+                            <i class="fas fa-star"></i>
+                        }
+
+                        //  las estrellas vacías
+                        for (int i = 0; i < emptyStars; i++)
+                        {
+                            <i class="far fa-star"></i>
+                        }
+                    }
+
+                    <span class="verified-badge">
+                        <i class="fas fa-check-circle text-success"></i> Compra verificada
+                    </span>
+                </div>
+
+                <h5>@r.TituloReseña</h5>
+                <p>@r.ReseñaProducto.</p>
+
+            </div>
+        }
+    </div>
+</div>
+

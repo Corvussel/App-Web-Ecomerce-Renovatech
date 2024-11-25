@@ -1,0 +1,159 @@
+﻿body {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+/*  apariencia de contenedor de navegación */ 
+ 
+/* color de fondo de la barra de navegación */
+.collapse.navbar-collapse {
+    background-color: white;
+    margin-left: 25px;
+}
+
+/* Cambia el color del textos */
+.navbar-nav .nav-link {
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4E4E4E;
+}
+
+ /* Cambia el color de los enlaces cuando el ratón pasa sobre ellos */
+.navbar-nav .nav-link:hover {
+    color: black;
+}
+ 
+
+.icono-busqueda {
+    width: 20px;
+    height: auto;
+}
+.icono-pagina {
+    width: 35px;
+    height: auto;
+}
+
+.icono-favoritos {
+    width: 20px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.icono-perfil_Usuario {
+    width: 20px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.custom-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    width: 289px;
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 40px;
+    border: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+.custom-input:focus {
+    outline: none;  
+    box-shadow: none;  
+}
+.custom-input:hover {
+    background-color: #f0f0f0;  
+}
+
+/*personalizacion para el placeholder*/
+
+.custom-input::placeholder{ 
+    width: 55px;
+    height: 18px; 
+    font-family: 'Segoe UI Variable Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px; 
+    color: #656565;
+}
+
+/*Personalizacion de pie de pagina*/
+
+.custom-footer { 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    flex-wrap:wrap;
+    background: #4E4E4E;
+    color: white;   
+    width: 100%; 
+    gap:10px;
+}
+
+
+.contenedor-seccion { 
+    margin-top:20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+
+
+.content {
+    display:flex;
+    flex-direction:column;
+    margin: 20px; 
+}
+    .content h3 {
+        font-style: italic;
+        font-weight: 40;
+        font-size: 14px;
+        color: #FFFFFF; 
+    }
+    .content li {
+        color: #CFCFCF;
+        font-style: italic;
+        font-weight: 40;
+        font-size: 12px;
+    }
+        .content li:hover {
+            text-decoration: underline;
+            cursor:pointer;
+        }
+
+
+.contenedor-social-icons {
+     margin-left:80px;
+}
+
+    .contenedor-social-icons a {
+        margin: 0 10px; 
+        color: #000; 
+        text-decoration: none;  
+    }
+
+    .contenedor-social-icons i {
+        font-size: 24px;  
+    }
+
+.derechos-autor {
+    margin:10px;
+    font-style: normal;
+    color: #CFCFCF;
+    text-align: center;
+    font-size: 13px;
+
+}
+ 
+

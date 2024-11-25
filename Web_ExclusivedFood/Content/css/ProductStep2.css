@@ -1,0 +1,331 @@
+﻿body {
+}
+
+/*seccion header*/
+ 
+.section-step {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 5px;
+    width: 80%;
+    height: auto;
+    min-height: 150px;
+}
+
+.step2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+    .step2 img {
+        width: 24px;
+        height: 24px;
+    }
+
+.description-step2 h2 {
+    height: 16px;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.description-step2 p {
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.diving-line {
+    width: 40%;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.back-step {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+    .back-step img {
+        width: 24px;
+        height: 24px;
+    }
+
+.description-backStep h2 {
+    height: 16px;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #C0C0C0;
+}
+
+.description-backStep p {
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #C0C0C0;
+}
+
+/*estilos seccion de detalles pagos*/
+
+.payment-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 50px 0px; 
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    min-width: 400px;
+    height: 522px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding: 32px 24px;
+    gap: 24px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+}
+
+.card-product {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.details-product {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-product {
+    font-family: 'Aladin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: #4E4E4E;
+}
+
+.details-price {
+    display: flex;
+    flex-direction: row;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #4E4E4E;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.direction {
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    color: #000000;
+    text-overflow: ellipsis;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #545454;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    min-width: 400px;
+    height: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding: 32px 24px;
+    gap: 25px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+.payment-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+}
+
+.card-page {
+    width: 337px;
+    height: 190px;
+    padding: 0px 10px;
+    background: #4E4E4E;
+    border-radius: 15px;
+    background-image: url('../Icons/icon-card-img.png');
+    background-size: calc(100% - 20px) calc(100% - 20px);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fields {
+    width: 100%;
+    height: auto;
+}
+
+.fields-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 5px;
+    gap: 5px;
+}
+
+.fields-bottom {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.field {
+    border: none;
+    outline: none;
+    width: 248px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 0.5px solid #CECECE;
+    border-radius: 7px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.field ::placeholder {  
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px; 
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+    color: #979797; 
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.button-next {
+    width: 150px;
+    height: 44px;
+    background: #4E4E4E;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+    .button-next:hover {
+        background: #2C2C2C;
+        color: #F5F5F5;
+    }
+
+.button-back {
+    width: 150px;
+    height: 44px;
+    border: 1px solid #4E4E4E;
+    border-radius: 6px;
+    background: white;
+    color: #4E4E4E;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+    .button-back:hover {
+        border-color: #000000;
+        color: black;
+    }

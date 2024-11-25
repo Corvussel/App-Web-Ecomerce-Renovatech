@@ -1,0 +1,105 @@
+﻿@model Web_ExclusivedFood.Models.Home.MainModel
+@{
+    ViewBag.Title = "Main";
+}
+
+<link href="~/Content/css/GestionProductos.css?v=1.1" rel="stylesheet" />
+<link href="~/Content/css/GestionCategoria.css" rel="stylesheet" />
+
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Categorías</h2>
+
+    <div class="category-container d-flex flex-wrap justify-content-start">
+
+        <div class="category-container">
+
+            @foreach (var cat in Model.Categorias)
+            {
+
+                <div class="category-card">
+                    <div class="category-img-container">
+                        <img src="@cat.UrlImagen" class="category-img" alt="Categoría 1">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@cat.Nombre</h5>
+                        <div class="mb-1">
+                            <a href="@Url.Action("EditarCategoria", "GestionSistema" , new{ id = cat.IdCategoria})" class="btn btn-warning">Editar</a>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Productos Registrados</h2>
+
+    <!-- Contenedor principal con scroll moderno para productos -->
+    <div class="product-container d-flex flex-wrap justify-content-start">
+
+        <!-- Tarjeta de producto -->
+        @foreach (var pro in Model?.Productos)
+        {
+
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <div class="product-img-container">
+                        <img src="@pro.url_imagen" class="product-img" alt="Producto 1">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@pro.Nombre</h5>
+                        <p class="card-text">@pro.Precio</p> 
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <!-- Botones -->
+    <h3 class="mb-4">Registros</h3>
+    <button type="button" id="btnCategoria" class="btn btn-secondary btn-lg">Registrar Categoria</button>
+
+    <!-- contenedor de las vistas parciales -->
+    <div id="miContenedor" class="container mt-5">
+
+    </div>
+
+</div>
+
+
+
+
+<script>
+     
+    $(document).on('click', '#btnCategoria', function () {
+        $.ajax({
+            url: '/GestionSistema/Categoria',
+            type: 'GET',
+            success: function (data) {
+                $('#miContenedor').html(data);
+            }
+        });
+    });
+
+</script>
+
+
+<!--Script para manejar los mensajes de cambios-->
+<script>
+    $(document).ready(function () {
+        var mensaje = '@TempData["MensajeRgt"]';
+        if (mensaje) {
+            toastr.success(mensaje);
+        }
+    });
+</script>
+

@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "EditarProducto";
+}
+
+
+<link href="~/Content/css/GestionProductos.css" rel="stylesheet" />
+
+
+@using (Html.BeginForm("EditarProducto", "GestionProducto", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    <input type="hidden" name="url_imagen" value="@Model.Producto.url_imagen">
+    <input type="hidden" name="IdProducto" value="@Model.Producto.IdProducto">
+    <input type="hidden" name="IDCategoria" value="@Model.Producto.IDCategoria">
+
+
+
+    <div class="container mt-5 mb-5">
+        <h3 class="text-center">Actualizacion de Producto</h3>
+
+        <form class="p-5">
+            <!-- Sección de Producto -->
+            <fieldset>
+                <legend class="w-auto">Información del Producto</legend>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <div class="image-container">
+                                <img id="image-preview" class="image-preview" src="@Model.Producto.url_imagen" alt="Vista previa de la imagen" />
+                            </div>
+                            <label for="url_imagen" class="form-label">Seleccionar Imagen</label>
+                            <input type="file" class="form-control" id="url_imagen" name="postFileImage" accept="image/*" onchange="vistaPreviaImagen(event)">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="stock" class="form-label">Stock</label>
+                            <input type="number" class="form-control" id="stock" required name="Stock" min="1" value="@Model.Producto.Stock">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="categoria" class="form-label">Categoría</label>
+                            <select class="form-select" id="categoria" required name="IDCategoria">
+                                <option value="">Seleccionar categoría</option>
+                                @if (Model?.Categorias != null)
+                                {
+                                    foreach (var categoria in Model.Categorias)
+                                    {
+                                        <option value="@categoria.IdCategoria">@categoria.Nombre</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre del Producto</label>
+                            <input type="text" class="form-control" name="Nombre" id="nombre" required placeholder="Nombre del producto" value="@Model.Producto.Nombre">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Descripción</label>
+                            <textarea required class="form-control" name="Descripcion" id="descripcion" rows="3" placeholder="Descripción del producto...">@Model.Producto.Descripcion</textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="precio" class="form-label">Precio (S/)</label>
+                            <input type="number" class="form-control" name="Precio" id="precio" step="0.01" required placeholder="Precio de producto" value="@Model.Producto.Precio">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Sección de Detalle del Producto -->
+            <fieldset>
+                <legend class="w-auto">Detalles del Producto</legend>
+                <div>
+                    <div class="mb-2">
+                        <label for="descripcion_detallada" class="form-label">Descripción Detallada</label>
+                        <textarea class="form-control" name="Descripcion_detallada" id="descripcion_detallada" rows="3">@Model.Producto.DetalleProducto.DescripcionDetallada</textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <label class="text-bg-danger">@ViewBag.MensajeValidacion</label>
+            <!-- Botón de envío -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" style="border-radius: 10px;">Guardar Cambios</button>
+            </div>
+        </form>
+    </div>
+}
+
+<script>
+
+    function vistaPreviaImagen(event) {
+        const input = event.target;
+        const preview = document.getElementById('image-preview');
+
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.maxWidth = '100%';
+                preview.style.maxHeight = '200px';
+                preview.style.display = 'block';
+            }
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            preview.src = '';
+            preview.style.display = 'none';
+        }
+    }
+</script>
+

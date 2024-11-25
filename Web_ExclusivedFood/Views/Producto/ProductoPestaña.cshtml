@@ -1,0 +1,166 @@
+﻿@model Web_ExclusivedFood.Models.Producto.Productos
+@{
+    ViewBag.Title = "ProductoPestaña";
+}
+
+
+<link href="~/Content/css/Product.css?v=1.9" rel="stylesheet" />
+
+<main>
+
+    @*informacion de producto*@
+
+    @using (Html.BeginForm("CarritoCompras", "Producto", FormMethod.Post))
+    {
+
+        <input type="hidden" name="id" value="@Model.IdProducto" />
+
+        <div class="main-info">
+
+            <div class="image-info">
+                <img src="@Model.url_imagen" alt="@Model.Nombre" />
+            </div>
+
+            <div class="info">
+
+                <div class="contenido">
+
+                    <div class="titulo">
+                        <h2>@Model.Nombre</h2>
+                        <p class="precio">S/.@Model.Precio</p>
+                    </div>
+                    <div class="description">
+                        <p>@Model.Descripcion</p>
+                    </div>
+
+                </div>
+
+                <button class="buttons" type="submit">Realizar compra</button>
+
+                <div class="icons">
+                    <div class="icon-content">
+                        <img src="~/Content/Icons/icons8-truck-24.png" alt="Icono 1" />
+
+                        <p>Envio gratis <br />15 min </p>
+                    </div>
+                    <div class="icon-content">
+                        <img src="~/Content/Icons/icons8-shop-24.png" alt="Icono 2" />
+                        <p> disponible <br /> Today</p>
+                    </div>
+                    <div class="icon-content">
+                        <img src="~/Content/Icons/icons8-guarantee-24.png" alt="Icono 3" />
+                        <p>Garantiza <br /> servicio exclusivo </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+
+    @*detalles de compra*@
+
+    <div class="detalles-producto">
+
+        <div class="contenedor">
+
+            <div class="descripcion">
+                <h3>@Model.Nombre</h3>
+                <h3>@Model.Precio</h3>
+                <p>
+                    @Model.DetalleProducto.DescripcionDetallada
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    @*comentarios del producto y rating *@
+
+    <div class="reviews-seccion">
+
+        <div class="producto-rating">
+
+            <div class="rating-contenedor">
+
+                <div class="rating-resumen mt-3">
+                    <h3>@Model.ReseñaProducto.valoracionPromedio.ToString("0.0")</h3>
+
+                    <p class="small">de @Model.ReseñaProducto.TotalValoracion opiniones</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="rating-detalles">
+                    @{
+                        foreach (var valoracion in Model.ReseñaProducto.ValoracionesPorcentajes)
+                        {
+                            <div class="rating-item">
+                                <!-- tipo de valoracion 1-5 estrellas-->
+                                <span class="star-label">@valoracion.Key <i class="fas fa-star"></i></span>
+
+                                <!-- Porcentajde cada valoracion -->
+                                <div class="progress flex-grow-1">
+                                    <div class="progress-bar" style="width: @valoracion.Value%"></div>
+                                </div>
+
+                                <!-- numero de vlaoraciones -->
+                                @{ double numeroValoracion = (valoracion.Value / 100) * @Model.ReseñaProducto.TotalValoracion; }
+                                <span class="ms-2">@numeroValoracion.ToString("0")</span>
+
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="customer-reviews">
+
+            @foreach (var valoracion in Model.ReseñaProducto.ListaReseñas)
+            {
+                <div class="single-review">
+
+                    <div class="review-product gap-3 mt-1">
+                        <img src="@valoracion.UrlImagenUsuario" alt="foto de perfil" class="perfil-usuario shadow" />
+                        <h3>@valoracion.NombreUsuario</h3>
+                    </div>
+                    <div id="star" class="stars">
+                        @{
+                            int maxStars = 5; // Máximo de 5 estrellas
+                            int filledStars = valoracion.Calificacion;// Calificación del producto
+                            int emptyStars = maxStars - filledStars; // Estrellas vacías restantes
+
+                            //  las estrellas llenas
+                            for (int i = 0; i < filledStars; i++)
+                            {
+                                <i class="fas fa-star"></i>
+                            }
+
+                            //  las estrellas vacías
+                            for (int i = 0; i < emptyStars; i++)
+                            {
+                                <i class="far fa-star"></i>
+                            }
+                        }
+
+                    </div>
+                    <h5 class="mt-3 mb-2">@valoracion.TituloReseña</h5>
+                    <p>
+                       @valoracion.ReseñaProducto
+                    </p>
+
+                </div>
+            }
+        </div>
+
+    </div>
+
+
+</main>

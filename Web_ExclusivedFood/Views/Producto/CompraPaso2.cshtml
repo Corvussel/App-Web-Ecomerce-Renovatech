@@ -1,0 +1,186 @@
+﻿@model Web_ExclusivedFood.Models.Producto.PedidoProducto
+
+@{
+    ViewBag.Title = "CompraPaso2";
+}
+
+
+<link href="~/Content/css/ProductStep2.css?v=1.5" rel="stylesheet" />
+
+@*header pasos de compra*@
+
+
+<section class="section-step">
+
+    <div class="steps">
+
+        <div class="back-step">
+            <img src="~/Content/Icons/icons8-location-24 (1).png" alt="Step 1" class="icon" />
+            <div class="description-backStep">
+                <h2>Paso 1</h2>
+                <p>Direccion</p>
+            </div>
+        </div>
+
+        <div class="diving-line">  </div>
+
+        <div class="step2">
+            <img src="~/Content/Icons/icons8-payment-24.png" alt="Step 2" class="icon" />
+            <div class="description-step2">
+                <h2>Paso 2</h2>
+                <p>Pago</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+@*seccion de pagos*@
+@using (Html.BeginForm("RealizarCompra", "Producto", FormMethod.Post))
+{
+    <!-- datos para enviar al controlador -->
+    <input type="hidden" name="IdProducto" value="@Model.IdProducto" />
+    <input type="hidden" name="Nombre" value="@Model.Nombre" />
+    <input type="hidden" name="Precio" value="@Model.Precio" />
+    <input type="hidden" name="Cantidad" value="@Model.Cantidad" />
+    <input type="hidden" name="PrecioTotal" value="@Model.PrecioTotal" />
+    <input type="hidden" name="Direccion" value="@Model.Direccion" />
+    <input type="hidden" name="NumeroTelefonico" value="@Model.NumeroTelefonico" />
+    <input type="hidden" name="url_imagen" value="@Model.url_imagen" />
+
+
+    <section class="payment-container">
+
+        <div class="left-content">
+            <p>Resumen</p>
+            <div class="card-product">
+                <img src="@Model.url_imagen" alt="@Model.Nombre" class="product-img" />
+                <div class="details-product">
+                    <p class="title-product">@Model.Nombre</p>
+                    <div class="details-price">
+                        <p>S/</p>
+                        <p id="precio-producto">@Model.Precio.ToString("0.00")"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div>
+                    <p>Direccion</p>
+                    <p class="direction">
+                        @Model.Direccion
+                    </p>
+                </div>
+                <div>
+                    <div class="prices">
+                        <p>Sub Total</p>
+                        <div class="price">
+                            <p>S/</p>
+                            <p id="sub-total">@Model.Precio</p>
+                        </div>
+                    </div>
+
+                    <div class="prices">
+                        <p>Impuesto estimado</p>
+                        <div class="price">
+                            <p>S/</p>
+                            <p id="impuesto-producto">0</p>
+                        </div>
+                    </div>
+
+                    <div class="prices">
+                        <p>Envío y manejo estimados</p>
+                        <div class="price">
+                            <p>S/</p>
+                            <p>5</p>
+                        </div>
+                    </div>
+
+                    <div class="prices">
+                        <p>Total</p>
+                        <div class="price">
+                            <p>S/</p>
+                            <p id="precio-neto">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right-content">
+            <div class="payment-details">
+                <div class="detailss">
+                    <p>Pago</p>
+                    <p>Tarjeta de credito</p>
+                </div>
+
+                <div class="card-page"> </div>
+
+                <div class="fields">
+                    <div class="fields-top">
+                        <input type="text" name="NombreTitular" class="field" placeholder="Nombre del titular de la tarjeta" required />
+                        <input type="text" name="NumeroTarjeta" class="field" placeholder=" Número de tarjeta" required />
+                    </div>
+                    <div class="fields-bottom">
+                        <input type="date" name="FechaExpiracion" class="field" placeholder="Fecha Expiracion" required />
+                        <input type="text" name="CVV" class="field" placeholder="CVV" required />
+                    </div>
+
+                </div>
+            </div>
+            <div class="buttons">
+                <input class="button-back" type="button" name="BtnAtras" value="Atras"  onclick="window.history.back();" />
+                <input class="button-next" type="submit" name="btnPagar" value="Pagar" />
+            </div>
+        </div>
+
+    </section>
+}
+
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        PrecioProducto();
+    });
+
+
+</script>
+
+
+<script>
+
+    // precio del producto
+    const precioProducto = @Model.Precio;
+
+    // 18% de impuesto
+    const impuestoPorcentaje = 0.18;
+
+
+    function PrecioProducto() {
+
+        const cantidad =  @Model.Cantidad;
+
+        // Precio total sin impuestos
+        const precioTotal = precioProducto * cantidad;
+
+        // calculo del impuesto
+        const impuesto = precioTotal * impuestoPorcentaje;
+
+        // Precio neto con impuesto
+        const precioNeto = precioTotal + impuesto;
+
+        // se actualiza los valores en el HTML
+        document.getElementById('sub-total').textContent = precioTotal;
+        document.getElementById('impuesto-producto').textContent = impuesto.toFixed(2);
+        document.getElementById('precio-neto').textContent = precioNeto.toFixed(2);
+    }
+
+
+</script>
+
+
+

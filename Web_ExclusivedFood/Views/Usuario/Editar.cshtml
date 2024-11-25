@@ -1,0 +1,127 @@
+﻿@model Web_ExclusivedFood.Models.Usuario.Usuario
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<link href="~/Content/css/UserProfile.css" rel="stylesheet" />
+ 
+
+
+
+@using (Html.BeginForm("EditarUsuario", "Usuario", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="hidden" name="UrlImagen" required value="@Model.UrlImagen">
+    <input type="hidden" name="Id" required value="@Model.Id">
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-img-container">
+                            <img src="@Model.UrlImagen" alt="Foto de perfil" class="profile-img" id="profileImagePreview">
+                        </div>
+                        <div class="profile-nav">
+                            <button type="button" class="btn btn-light" onclick="window.history.back()">
+                                <i class="fas fa-arrow-left"></i> Volver
+                            </button>
+                        </div>
+                    </div>
+                    <div class="profile-body">
+                        <div class="profile-name">
+                            <h2 class="mb-1">Editar Perfil</h2>
+                            <p class="text-muted mb-4">Actualiza tu información personal</p>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control input-custom" id="nombre" name="Nombre" placeholder="Ingrese su nombre y apellido" required value="@Model.Nombre">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="email" value="@Model.Email" name="Email" placeholder="ej. admin@gmail.com" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone" class="form-label">Teléfono</label>
+                                        <input type="tel" class="form-control input-custom" id="telefono" name="Telefono" placeholder="+51 924687764" value="@Model.Telefono">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="postal-code" class="form-label">Código Postal</label>
+                                        <input type="text" class="form-control input-custom" id="codigo_postal" name="CodigoPostal" placeholder="Ingrese su código postal" value="@Model.CodigoPostal">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address" class="form-label">Dirección</label>
+                                <input type="text" class="form-control input-custom" id="direccion" name="Direccion" placeholder="Ingrese su dirección" value="@Model.Direccion">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="city" class="form-label">Ciudad</label>
+                                        <input type="text" class="form-control input-custom" id="ciudad" name="Ciudad" placeholder="Ingrese su ciudad" value="@Model.Ciudad">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="password" class="form-label">Nueva Contraseña</label>
+                                        <input type="password" class="form-control input-custom" id="password" name="ContrasenaHash" placeholder="********" required value="@Model.ContrasenaHash">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="profile-image" class="form-label">Imagen de Perfil</label>
+                                <input type="file" class="form-control input-custom" id="imagen" name="postFileImage" accept="image/*" onchange="previewImage(event)">
+                            </div>
+
+                            <div class="mt-4 text-center">
+                                <button type="submit" class="btn btn-custom-primary me-2">Guardar Cambios</button>
+                                <button type="button" class="btn btn-custom-secondary" onclick="window.history.back()">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+<script>
+
+    function previewImage(event) {
+
+        const imagePreview = document.getElementById('profileImagePreview');
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            imagePreview.src = e.target.result;
+        };
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function cerrarSesion() {
+
+    window.location.href = '@Url.Action("CerrarSesion", "Login")';
+
+}
+
+
+</script>

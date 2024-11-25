@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewBag.Title = "Producto";
+}
+
+
+<link href="~/Content/css/GestionProductos.css" rel="stylesheet" />
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Mis Productos</h2>
+
+    <!-- Contenedor principal con scroll moderno para productos -->
+    <div class="product-container d-flex flex-wrap justify-content-start">
+
+        <!-- Tarjeta de producto -->
+        @foreach (var pro in Model?.Productos)
+        {
+
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <div class="product-img-container">
+                        <img src="@pro.url_imagen" class="product-img" alt="Producto 1">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@pro.Nombre</h5>
+                        <p class="card-text">@pro.Precio</p>
+                        <div>
+                            <a href="@Url.Action("EditarProducto", "GestionProducto" , new{ id = pro.IdProducto})" class="btn btn-warning">Editar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+
+@using (Html.BeginForm("RegistrarProducto", "GestionProducto", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="container mt-5 mb-5">
+        <h3 class="text-center">Registro de Producto</h3>
+
+        <form class="p-5">
+            <!-- Sección de Producto -->
+            <fieldset>
+                <legend class="w-auto">Información del Producto</legend>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <div class="image-container">
+                                <img id="image-preview" class="image-preview" src="#" alt="Vista previa de la imagen" />
+                            </div>
+                            <label for="url_imagen" class="form-label">Seleccionar Imagen</label>
+                            <input required type="file" class="form-control" id="url_imagen" name="postFileImage" accept="image/*" onchange="vistaPreviaImagen(event)">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="stock" class="form-label">Stock</label>
+                            <input type="number" class="form-control" id="stock" required name="Stock" min="0">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="categoria" class="form-label">Categoría</label>
+                            <select class="form-select" id="categoria" required name="IDCategoria">
+                                <option value="">Seleccionar categoría</option>
+                                @if (Model?.Categorias != null)
+                                {
+                                    foreach (var categoria in Model.Categorias)
+                                    {
+                                        <option value="@categoria.IdCategoria">@categoria.Nombre</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre del Producto</label>
+                            <input type="text" class="form-control" name="Nombre" id="nombre" required placeholder="Nombre del producto">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Descripción</label>
+                            <textarea class="form-control" name="Descripcion" id="descripcion" rows="3" placeholder="Descripción del producto..."></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="precio" class="form-label">Precio (S/)</label>
+                            <input type="number" class="form-control" name="Precio" id="precio" step="0.01" required placeholder="Precio de producto">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Sección de Detalle del Producto -->
+            <fieldset>
+                <legend class="w-auto">Detalles del Producto</legend>
+                <div>
+                    <div class="mb-2">
+                        <label for="descripcion_detallada" class="form-label">Descripción Detallada</label>
+                        <textarea class="form-control" name="Descripcion_detallada" id="descripcion_detallada" rows="3"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <label class="text-bg-danger">@ViewBag.MensajeValidacion</label>
+            <!-- Botón de envío -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" style="border-radius: 10px;">Registrar Producto</button>
+            </div>
+        </form>
+    </div>
+}
+
+<script>
+
+    function vistaPreviaImagen(event) {
+        const input = event.target;
+        const preview = document.getElementById('image-preview');
+
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.maxWidth = '100%';
+                preview.style.maxHeight = '200px';
+                preview.style.display = 'block';
+            }
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            preview.src = '';
+            preview.style.display = 'none';
+        }
+    }
+</script>
+
+
+
+<!--Script para manejar los mensajes de cambios-->
+<script>
+    $(document).ready(function () {
+        var mensaje = '@TempData["MensajeRgt"]';
+        if (mensaje) {
+            toastr.success(mensaje);
+        }
+    });
+</script>

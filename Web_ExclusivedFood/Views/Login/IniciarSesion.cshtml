@@ -1,0 +1,49 @@
+﻿@model Web_ExclusivedFood.Models.Login.LoginViewModel
+
+@{
+    ViewBag.Title = "IniciarSesion";
+}
+
+
+<link href="~/Content/css/Login.css?v1.5" rel="stylesheet" />
+
+
+<section class="section-login">
+
+    <div class="container-login">
+
+
+
+        <div class="left-content">
+            <h2>Inicia Sesión</h2>
+        </div>
+
+        <div class="right-content">
+
+            @using (Html.BeginForm("IniciarSesion", "Login", FormMethod.Post))
+            {
+
+                <div class="group-control">
+                    @Html.TextBoxFor(m => m.CorreoElectronico, new { @class = "control", placeholder = "Ingrese su nombre de usuario", required = "required" })
+                    @Html.ValidationMessageFor(l => l.CorreoElectronico, "", new { @class = "text-danger small" })
+
+                    @Html.PasswordFor(m => m.Password, new { @class = "control", placeholder = "Ingrese su contraseña" , required = "required" })
+                    @Html.ValidationMessageFor(l => l.Password, "", new { @class = "text-danger small" })
+                </div>
+
+                <label class="lbl-mensaje">@ViewBag.Mensaje </label>
+
+                <div class="container-buttons">
+                    <a href="@Url.Action("CrearCuenta", "Login")" class="btn-crear-cuenta">Crear Cuenta</a>
+                    <button type="submit" class="btn-iniciar-sesion">Iniciar Sesión</button>
+                </div>
+
+            }
+        </div>
+
+    </div>
+</section>
+
+
+
+

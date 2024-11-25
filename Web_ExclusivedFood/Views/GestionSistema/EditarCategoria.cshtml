@@ -1,0 +1,59 @@
+﻿@model Web_ExclusivedFood.Models.Categoria.Categorias
+@{
+    ViewBag.Title = "EditarCategoria";
+}
+
+<link href="~/Content/css/GestionCategoria.css?v=1.2" rel="stylesheet" />
+
+
+
+@using (Html.BeginForm("EditarCategoria", "GestionSistema", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="container mt-5 mb-5 d-flex justify-content-center gap-4">
+
+        <!--Valores oculto para la peticion-->
+        <input type="hidden" name="UrlImagen" value="@Model.UrlImagen">
+        <input type="hidden" name="IdCategoria" value="@Model.IdCategoria">
+
+        <!-- Contenedor de vista previa -->
+        <div class="preview-container">
+            <h5>Vista Previa de la Imagen</h5>
+            <img id="preview" class="vista-previa" src="@Url.Content(Model.UrlImagen)" alt="Vista previa de la imagen">
+            <input type="file" name="postFileImage" id="imageInput" class="form-control mt-2" accept="image/*">
+        </div>
+
+        <!-- Formulario para editar la categoría -->
+        <div class="edit-form">
+            <h2>Editar Categoría</h2>
+            <div class="form-group">
+                <label for="categoryName" class="form-label">Nombre de la Categoría</label>
+                <input type="text" name="Nombre" id="categoryName" class="form-control w-100" placeholder="Ingrese el nombre de la categoría" value="@Model.Nombre">
+            </div>
+            <button type="submit" class="btn btn-primary btn-save">Guardar Cambios</button>
+        </div>
+    </div>
+
+}
+
+
+<script>
+
+    document.getElementById('imageInput').addEventListener('change', function (event) {
+        const file = event.target.files[0];
+        const preview = document.getElementById('preview');
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = '';
+            preview.style.display = 'none';
+        }
+    });
+</script>
+
+

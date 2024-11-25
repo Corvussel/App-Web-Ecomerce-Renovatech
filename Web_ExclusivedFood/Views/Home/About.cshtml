@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<style>
+
+    .about-banner {
+        background-image: url('/Content/Icons/Restaurante.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        position: relative;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+        .about-banner h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .about-banner p {
+            font-size: 1.25rem;
+        }
+
+    .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .highlight {
+        color: #d9534f;
+        font-weight: bold;
+    }
+
+    .card-custom {
+        border: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .baner-text {
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    }
+</style>
+
+<div class="about-banner">
+    <div class="container">
+        <h1 class="baner-text">Bienvenidos a RenovaTech</h1>
+        <p class="baner-text">El lugar donde lo mejor del mundo productos de segunda mano converge</p>
+    </div>
+</div>
+
+
+<section class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="section-title">Acerca de Nosotros</h2>
+                <p>En <span class="highlight">RenovaTech</span>, estamos comprometidos en ofrecer una plataforma de e-commerce segura y fácil de usar para la compra y venta de productos de segunda mano. Desde nuestra creación en Lima, Perú, buscamos conectar a los usuarios, permitiéndoles encontrar y vender artículos de calidad que merecen una segunda oportunidad.</p>
+                <p>Nuestro catálogo es tan diverso como nuestra comunidad de usuarios. Ofrecemos una amplia gama de productos, desde tecnología hasta artículos para el hogar, siempre enfocados en la sostenibilidad y la economía circular. Nuestro objetivo es brindar a cada usuario una experiencia de compra y venta sencilla, confiable y accesible.</p>
+                <p>La plataforma es liderada por <span class="highlight">Russel</span>, un empresario innovador que tiene la misión de facilitar el comercio de segunda mano en el país, ofreciendo una alternativa sostenible para quienes buscan productos de calidad sin renunciar a un precio justo. Bajo su dirección, <span class="highlight">RenovaTech</span> se ha convertido en un referente en el mercado de productos de segunda mano en línea.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="~/Content/Icons/Restaurante.jpg" alt="Restaurante Exclusived Food" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section> 

@@ -1,0 +1,81 @@
+﻿@model List<Web_ExclusivedFood.Models.Producto.Productos>
+
+@{
+    ViewBag.Title = "CategoriaProducto";
+}
+
+
+
+<link href="~/Content/css/ProductCategory.css?v=2.2" rel="stylesheet" />
+
+
+<header class="section-header">
+    <div class="contenedor-principal">
+        <img src="~/Content/Icons/Televisor_img.png" alt="Imagen de fondo"  class="imagen-fondo" />
+        <div class="contenedor-secundario">
+            <div class="content-details">
+                <h3>Los mejores productos de segunda mano</h3>
+                <p>Encuentra artículos únicos con historia y calidad a precios accesibles. Disfruta de una experiencia de compra responsable y sostenible con productos que aún tienen mucho para ofrecer.</p> 
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="container mt-5">
+
+    <div class="products-category d-flex flex-wrap justify-content-start">
+
+        @if (Model != null)
+        {
+
+            @*/*mostrar informacion de prouductos desde el controlador a la vista*/*@
+
+            foreach (var pro in Model)
+            {
+                //POST individual para mostrar la vista de compra del producto
+
+                using (Html.BeginForm("DetallesProducto", "Producto", FormMethod.Post))
+                {
+
+                    /*contenedor producto*/
+                    <div class="card card-product">
+
+                        @*enlace para agregar productos a favoritos*@
+                        <div class="favorites-icon">
+                            <a href="">
+                                <img src="~/Content/Icons/icons8-favorite.png" />
+                            </a>
+                        </div>
+
+                        @*imagen de producto y redireccionamiento a la vista compra*@
+                        <div class="image-product">
+                            <a href="@Url.Action("DetallesProducto", "Producto", new { id = pro.IdProducto })">
+                                <img src="@pro.url_imagen" />
+                            </a>
+                        </div>
+                        @*cotenedor de detalles del producto y enlaces a la vista compra*@
+                        <div class="product-description">
+
+                            <h3>@pro.Nombre</h3>
+                            <p>@pro.Descripcion</p>
+                            <p>@pro.Precio</p>
+                        </div>
+                        <!-- Campo oculto para enviar controlador el ID del producto al realizar un post-->
+                        <input type="hidden" name="id" value="@pro.IdProducto" />
+                        <!--button para realizar un post y enviar los datos al controlador de la vista compra-->
+                        <button class="button-comprar" type="submit">Comprar</button>
+
+                    </div>
+                }
+            }
+        }
+        else
+        {
+            <p>No hay productos disponibles.</p>
+        }
+
+    </div>
+</section>
+
+
+

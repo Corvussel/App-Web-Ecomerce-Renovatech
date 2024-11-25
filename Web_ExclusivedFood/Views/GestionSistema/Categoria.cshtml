@@ -1,0 +1,64 @@
+﻿@model Web_ExclusivedFood.Models.Categoria.Categorias
+ 
+
+<link href="~/Content/css/GestionCategoria.css" rel="stylesheet" />
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+
+
+
+<div class="container-category">
+
+    @using (Html.BeginForm("RegistrarCategoria", "GestionSistema", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="d-flex">
+            <!-- Contenedor de vista previa -->
+            <div class="preview-container me-4">
+                <h5>Vista Previa de la Imagen</h5>
+                <img id="image-preview" class="image-preview" src="#" alt="Vista previa de la imagen" style="max-width: 100%; max-height: 200px; display: none;" />
+                <p>Selecciona una imagen para ver la vista previa.</p>
+            </div>
+
+            <!-- Contenedor del formulario -->
+            <div class="edit-form">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Nombre)
+                    @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", placeholder = "Ingrese el nombre de la categoría" })
+                    @Html.ValidationMessageFor(m => m.Nombre, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.UrlImagen, "URL de Imagen")
+                    @Html.TextBoxFor(m => m.postFileImage, new { @class = "form-control", type = "file", accept = "image/*", onchange = "vistaPreviaImagen(event)" })
+                    @Html.ValidationMessageFor(m => m.UrlImagen, "", new { @class = "text-danger" })
+                </div>
+
+                <button type="submit" class="btn btn-primary">Registrar Categoría</button> 
+            </div>
+        </div>
+    }
+</div>
+
+
+<script>
+
+    function vistaPreviaImagen(event) {
+
+        const imagePreview = document.getElementById('image-preview');
+        const file = event.target.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+</script>

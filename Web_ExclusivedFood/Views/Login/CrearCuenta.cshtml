@@ -1,0 +1,78 @@
+﻿@model Web_ExclusivedFood.Models.Login.LoginViewModel
+
+@{
+    ViewBag.Title = "CrearCuenta";
+}
+
+
+<link href="~/Content/css/Login.css?v1.5" rel="stylesheet" />
+
+
+@using (Html.BeginForm("CrearCuenta", "Login", FormMethod.Post))
+{
+    <section class="section-login">
+
+        <div class="container-primary">
+
+            <h2>Crear Cuenta</h2>
+
+            <div class="content-primay">
+
+                <div class="left">
+                    <div class="group-control">
+                        @Html.TextBoxFor(l => l.NombreCompleto, new { @class = "control", placeholder = "Ingrese su nombre completo" , required = "required" })
+                        @Html.ValidationMessageFor(l => l.NombreCompleto, "", new { @class = "text-danger small" })
+                    </div>
+
+                    <div class="group-control">
+                        @Html.TextBoxFor(l => l.CorreoElectronico, new { @class = "control", placeholder = "Ingrese su correo electrónico", required = "required" })
+                        @Html.ValidationMessageFor(l => l.CorreoElectronico, "", new { @class = "text-danger small" })
+                    </div>
+
+                    <div class="group-control">
+                        @Html.TextBoxFor(l => l.Telefono, new { @class = "control", placeholder = "Ingrese su número de teléfono", required = "required" })
+                        @Html.ValidationMessageFor(l => l.Telefono, "", new { @class = "text-danger small" })
+                    </div>
+
+                    <div class="group-control">
+                        @Html.PasswordFor(l => l.Password, new { @class = "control", placeholder = "ingrese su contraseña", required = "required" })
+                        @Html.ValidationMessageFor(l => l.Password, "", new { @class = "text-danger small" })
+                    </div>
+
+                    <div class="group-control">
+                        @Html.PasswordFor(l => l.ConfirmarPassword, new { @class = "control", placeholder = "Confirme su contraseña", required = "required" })
+                        @Html.ValidationMessageFor(l => l.ConfirmarPassword, "", new { @class = "text-danger small" })
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="group-control">
+                        @Html.TextBoxFor(l => l.Direccion, new { @class = "control", placeholder = "Ingrese su dirección de envío", required = "required" })
+                        @Html.ValidationMessageFor(l => l.Direccion, "", new { @class = "text-danger small" })
+                    </div>
+
+                    <div class="group-control">
+                        @Html.TextBoxFor(l => l.Ciudad, new { @class = "control", placeholder = "Ingrese su ciudad", required = "required" })
+                        @Html.ValidationMessageFor(l => l.Ciudad, "", new { @class = "text-danger small" })
+                    </div>
+
+                    <div class="group-control">
+                        @Html.TextBoxFor(l => l.CodigoPostal, new { @class = "control", placeholder = "Ingrese su código postal", required = "required" })
+                        @Html.ValidationMessageFor(l => l.CodigoPostal, "", new { @class = "text-danger small" })
+                    </div>
+
+                    <label class="lbl-mensaje">@ViewBag.Mensaje</label>
+
+                    <div class="container-buttons">
+                        <a href="@Url.Action("IniciarSesion", "Login")" class="btn-crear-cuenta">Iniciar Sesión</a>
+                        <button type="submit" class="btn-iniciar-sesion">Crear Cuenta</button>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+
+    </section>
+}
+
+

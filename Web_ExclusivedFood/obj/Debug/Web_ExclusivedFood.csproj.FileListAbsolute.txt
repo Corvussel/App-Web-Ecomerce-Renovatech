@@ -1,0 +1,316 @@
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.dll.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.pdb
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.rsp
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.rsp
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Buffers.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Memory.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.rsp
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\VBCSCompiler.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Antlr3.Runtime.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Firebase.Storage.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Newtonsoft.Json.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Buffers.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Memory.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Numerics.Vectors.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Helpers.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Mvc.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Optimization.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Razor.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Deployment.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Razor.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\WebGrease.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Newtonsoft.Json.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Buffers.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Memory.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Numerics.Vectors.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Helpers.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Mvc.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Razor.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Deployment.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Razor.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Optimization.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\Antlr3.Runtime.pdb
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Helpers.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Mvc.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Razor.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Optimization.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.AssemblyReference.cache
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.CoreCompileInputs.cache
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.CopyComplete
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.pdb
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.dll.config
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.pdb
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.exe
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.exe.config
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.rsp
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.exe
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.exe.config
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.rsp
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Buffers.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Memory.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.exe
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.exe.config
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.rsp
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\VBCSCompiler.exe
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Antlr3.Runtime.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Firebase.Storage.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Newtonsoft.Json.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Buffers.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Memory.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Numerics.Vectors.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Helpers.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Mvc.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Optimization.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Razor.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Deployment.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Razor.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\WebGrease.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Newtonsoft.Json.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Buffers.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Memory.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Numerics.Vectors.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Helpers.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Mvc.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Razor.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Deployment.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Razor.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Optimization.xml
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\Antlr3.Runtime.pdb
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Helpers.resources.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Mvc.resources.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Razor.resources.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.resources.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Optimization.resources.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.AssemblyReference.cache
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.CoreCompileInputs.cache
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.CopyComplete
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.dll
+C:\Users\LAB10\Downloads\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.pdb
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.dll.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.pdb
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.rsp
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.rsp
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Buffers.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Memory.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.rsp
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\VBCSCompiler.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Antlr3.Runtime.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Firebase.Storage.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Newtonsoft.Json.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Buffers.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Memory.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Numerics.Vectors.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Helpers.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Mvc.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Optimization.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Razor.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Deployment.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Razor.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\WebGrease.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Newtonsoft.Json.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Buffers.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Memory.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Numerics.Vectors.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Helpers.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Mvc.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Razor.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Deployment.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Razor.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Optimization.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\Antlr3.Runtime.pdb
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Helpers.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Mvc.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Razor.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Optimization.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.AssemblyReference.cache
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.CoreCompileInputs.cache
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.CopyComplete
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Aplicaciones Web\APPS-WEB\App MVC\Proyecto Final\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.pdb
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.dll.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Web_ExclusivedFood.pdb
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csc.rsp
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\csi.rsp
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Buffers.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Memory.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\vbc.rsp
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\VBCSCompiler.exe
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Antlr3.Runtime.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Firebase.Storage.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Newtonsoft.Json.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Buffers.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Memory.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Numerics.Vectors.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Helpers.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Mvc.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Optimization.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Razor.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Deployment.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Razor.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\WebGrease.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Newtonsoft.Json.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Buffers.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Memory.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Numerics.Vectors.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Helpers.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Mvc.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Razor.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Deployment.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.WebPages.Razor.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\System.Web.Optimization.xml
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\Antlr3.Runtime.pdb
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Helpers.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Mvc.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Razor.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\bin\es\System.Web.Optimization.resources.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.AssemblyReference.cache
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.CoreCompileInputs.cache
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.csproj.CopyComplete
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.dll
+C:\Users\russe\source\repos\CICLO IV\MODULO I\Gestion de proyectos TI\Web_ExclusivedFood\Web_ExclusivedFood\obj\Debug\Web_ExclusivedFood.pdb

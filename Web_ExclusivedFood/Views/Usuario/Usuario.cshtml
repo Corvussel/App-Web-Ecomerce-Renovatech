@@ -1,0 +1,99 @@
+﻿@model Web_ExclusivedFood.Models.Usuario.Usuario
+@{
+    ViewBag.Title = "Usuario";
+}
+<link href="~/Content/css/UserProfile.css?v=1.3" rel="stylesheet" />  
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-img-container">
+                        <img src="@Model.UrlImagen" alt="Foto de perfil" class="profile-img">
+                    </div>
+                    <div class="profile-nav">
+                        <button class="btn btn-light" onclick="editarUsuario()"><i class="fas fa-cog"></i> Editar</button>
+                        <button class="btn btn-light" onclick="cerrarSesion()"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
+                    </div>
+                </div>
+                <div class="profile-body">
+                    <div class="profile-name">
+                        <h2 class="mb-1">@Model.Nombre</h2>
+                        <p class="text-muted mb-4">Cliente nuevo</p>
+                    </div>
+                    <div class="profile-info">
+                        <div class="info-group">
+                            <p class="info-label">Teléfono</p>
+                            <p class="info-value">+51 @Model.Telefono</p>
+                        </div>
+                        <div class="info-group">
+                            <p class="info-label">Código Postal</p>
+                            <p class="info-value">@Model.CodigoPostal</p>
+                        </div>
+                        <div class="info-group">
+                            <p class="info-label">Dirección</p>
+                            <p class="info-value">@Model.Direccion</p>
+                        </div>
+                        <div class="info-group">
+                            <p class="info-label">Ciudad</p>
+                            <p class="info-value">@Model.Ciudad</p>
+                        </div>
+                        <div class="info-group">
+                            <p class="info-label">Correo Electrónico</p>
+                            <p class="info-value">@Model.Email</p>
+                        </div>
+                        <div class="info-group">
+                            <p class="info-label">Miembro desde</p>
+                            <p class="info-value">15 de Marzo, 2022</p>
+                        </div>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="row">
+                            <div class="col-4 stat-item">
+                                <p class="stat-value">23</p>
+                                <p class="stat-label">Pedidos</p>
+                            </div>
+
+                            <div class="col-4 stat-item">
+                                <p class="stat-value">520€</p>
+                                <p class="stat-label">Total gastado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="btn btn-custom-primary"><i class="fas fa-shopping-cart"></i> Mis Pedidos</button>
+                        <button class="btn btn-custom-secondary"><i class="fas fa-heart"></i> Lista de Deseos</button>
+                        <button class="btn btn-custom-accent"><i class="fas fa-star"></i> Mis Reseñas</button>
+                        <button class="btn btn-outline-danger"><i class="fas fa-trash"></i> Eliminar Cuenta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    function cerrarSesion() {
+
+        window.location.href = '@Url.Action("CerrarSesion", "Login")';
+
+    }
+
+    function editarUsuario()
+    {
+        window.location.href = '@Url.Action("Editar", "Usuario")';
+    }
+
+    //mensaje de operaciones
+
+    $(document).ready(function () {
+       var mensaje = '@TempData["Mensaje"]';
+       if (mensaje) {
+           toastr.success(mensaje);
+       }
+   });
+
+</script>

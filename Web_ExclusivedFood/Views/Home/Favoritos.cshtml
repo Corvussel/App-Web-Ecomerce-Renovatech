@@ -1,0 +1,67 @@
+﻿@model List<Web_ExclusivedFood.Models.Producto.Productos>
+@{
+    ViewBag.Title = "Favoritos";
+}
+
+<link href="~/Content/css/Favoritos.css?v=1.2" rel="stylesheet" />
+
+
+
+<div class="container my-5 pt-5">
+    <main>
+        <h1>Su Selección Personal</h1>
+
+        <div class="row" id="favorites-container">
+            @if (Model != null)
+            {
+                foreach (var pro in Model)
+                {
+                    <div class="col-md-6 col-lg-4">
+                        <div class="dish-card">
+                            <img src="@pro.url_imagen" alt="Plato" class="dish-img">
+                            <div class="dish-info">
+                                <h3 class="dish-name">@pro.Nombre</h3>
+                                <p class="dish-description">@pro.Descripcion</p>
+                                <p class="dish-price">S/.@pro.Precio</p>
+
+                                <!-- Formulario para remover el producto de favoritos -->
+                                <form action="/Home/RemoverProductoFavorito" method="post" class="d-inline">
+
+                                    <input type="hidden" name="IdProducto" value="@pro.IdProducto">
+                                    <button type="submit" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fas fa-heart-broken"></i> Remover
+                                    </button>
+                                </form>
+                              
+                                <!-- Formulario para solicitar el producto -->
+                                <form action="/Producto/DetallesProducto" method="get" class="d-inline">
+
+                                    <input type="hidden" name="id" value="@pro.IdProducto">
+                                    <button type="submit" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-shopping-cart"></i> Solicitar
+                                    </button>
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p class="dish-description">Agrega productos que desees</p>
+            }
+        </div>
+    </main>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var mensaje = '@TempData["Mensaje"]';
+        if (mensaje) {
+            toastr.success(mensaje);
+        }
+    });
+</script>

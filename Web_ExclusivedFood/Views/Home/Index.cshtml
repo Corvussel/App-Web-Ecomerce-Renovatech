@@ -1,0 +1,150 @@
+﻿@model Web_ExclusivedFood.Models.Home.MainModel
+@{
+    ViewBag.Title = "Home Page";
+}
+<link href="~/Content/css/Home.css?v=1.9" rel="stylesheet" />
+<link href="~/Content/css/GestionProductos.css" rel="stylesheet" />
+
+
+<main>
+
+    <!-- Recomendaciones Inicio -->
+    @*POST individual para mostrar vista de compra del producto*@
+
+    @if (Model?.Producto != null)
+    {
+        using (Html.BeginForm("DetallesProducto", "Producto", FormMethod.Post))
+        {
+            <div class="hero-section h-auto">
+                <div class="container-lg mt-5 ">
+                    <div class="row container-fluid">
+                        <div class="imagen-recomendacion">
+                            <img src="@Model.Producto.url_imagen" class="product-image" alt="Éclat - Plato Exclusivo">
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center">
+                            <div class="content-area">
+                                <h1>@Model.Producto.Nombre</h1>
+                                <p class="tagline">@Model.Producto.Descripcion</p>
+                                <p class="price">S/.@Model.Producto.Precio</p>
+
+                                <input type="hidden" name="id" value="@Model.Producto.IdProducto" />
+                                <button class="btn btn-reserve">Realizar Compra</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+
+    @if (Model.Categorias != null && Model.Categorias.Any())
+    {
+        <!--  Seccion de categorias -->
+        <div class="container">
+            <div class="category-container">
+                <!-- mostrar informacion de las categorias desde el controlador a la vista-->
+                @foreach (var categoria in Model?.Categorias)
+                {
+                    <!-- Tarjeta de categorías 1 -->
+                    <div class="category-card">
+                        <img src="@categoria.UrlImagen" alt="@categoria.Nombre" class="category-img" />
+                        <div class="category-content">
+                            <p class="category-title">@categoria.Nombre</p>
+                            <a href="@Url.Action("CategoriaProducto","CaregoriaPro", new{ id = categoria.IdCategoria})" class="category-btn">Ver más</a>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="container d-flex justify-content-center align-items-center mt-5" style="height: 300px;">
+            <div class="alert alert-light text-center shadow-sm p-4 rounded" style="border: 1px solid #dee2e6;">
+                <h3 class="display-6" style="color: #5a6268;">😕 No se encontraron categorías</h3>
+                <p class="text-muted mt-2" style="font-size: 1rem;">
+                    Lo sentimos, pero en este momento no hay categorías disponibles. Vuelve más tarde o contacta con el equipoo de soporte.
+                </p>
+
+            </div>
+        </div>
+
+    }
+
+    <!-- Sección de Productos -->
+
+    <section class="container mt-5 mb-5">
+
+        <div class="contenedor-productos d-flex flex-wrap justify-content-start">
+
+            @if (Model.Productos != null && Model.Productos.Any())
+            {
+
+                foreach (var pro in Model?.Productos)  /*mostrar informacion de prouductos desde el controlador a la vista*/
+                {
+                    //POST individual para mostrar vista de compra del producto
+                    using (Html.BeginForm("DetallesProducto", "Producto", FormMethod.Post))
+                    {
+
+                        /*contenedor producto*/
+                        <div class="card producto">
+
+                            @*enlace para agregar productos a favoritos*@
+                            <div class="icono-favoritos">
+                                <a href="@Url.Action("AgregarProductoFavorito", "Home", new { idProducto = pro.IdProducto })">
+                                    <img src="~/Content/Icons/icons8-favorite.png" />
+                                </a>
+                            </div>
+
+                            @*imagen de producto y redireccionamiento a la vista compra*@
+                            <div class="contenedor-imagen-producto">
+                                <a href="@Url.Action("DetallesProducto", "Producto", new { id = pro.IdProducto })">
+                                    <img src="@pro.url_imagen" alt="@pro.Nombre" class="producto-img" />
+                                </a>
+                            </div>
+                            @*cotenedor de detalles del producto y enlaces a la vista compra*@
+                            <div class="descripcion-producto">
+
+                                <h3>@pro.Nombre</h3>
+                                <p>@pro.Descripcion</p>
+                                <p>@pro.Precio</p>
+                            </div>
+                            <!-- Campo oculto para enviar controlador el ID del producto al realizar un post-->
+
+                            <input type="hidden" name="id" value="@pro.IdProducto" />
+                            <!--button para realizar un post y enviar los datos al controlador de la vista compra-->
+                            <div class="d-flex w-100 justify-content-center mb-2">
+                                <button class="button-comprar" type="submit">Comprar</button>
+                            </div>
+
+                        </div>
+                    }
+                }
+
+            }
+            else
+            { 
+                    <div class="alert alert-light text-center shadow-sm p-4 rounded flex-grow-1" style="border: 1px solid #dee2e6;">
+                        <h3 class="display-6" style="color: #5a6268;">🛒 No hay productos disponibles</h3>
+                        <p class="text-muted mt-2" style="font-size: 1rem;">
+                            Actualmente no tenemos productos para mostrar. Explora otras categorías o vuelve más tarde para ver nuevas opciones.
+                        </p> 
+                    </div> 
+
+            }
+
+        </div>
+    </section>
+
+</main>
+
+
+<script>
+    $(document).ready(function () {
+        var mensaje = '@TempData["Mensaje"]';
+        if (mensaje) {
+            toastr.success(mensaje);
+        }
+    });
+</script>

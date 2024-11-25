@@ -1,0 +1,162 @@
+﻿body {
+}
+
+
+.section-login {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    background: #f0f4f9;
+}
+/*iniciar sesion*/
+
+.container-login {
+    display: flex;
+    width: 80%;
+    height: auto;
+    min-width: 350px;
+    max-width: 950px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    gap: 10px;
+}
+
+.left-content {
+    display: flex;
+    width: 40%;
+    min-width: 250px;
+    height: 120px;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.right-content {
+    display: flex;
+    width: 50%;
+    min-width: 250px;
+    height: 220px;
+    gap: 5px;
+}
+
+
+.group-control {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+.control {
+    margin: 5px;
+    display: flex;
+    border: none;
+    outline: none;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+ 
+    .control:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+.container-buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.btn-iniciar-sesion {
+    background: #0b57d0;
+    border: none;
+    color: #fff;
+    border-radius: 9px;
+    width: 140px;
+    height: 40px;
+}
+
+.btn-crear-cuenta {
+    background: #fff;
+    border: none;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*crear cuenta*/
+.container-primary {
+    width: clamp(450px, 80%, 1200px);
+    height: auto; 
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    gap: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-primay {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.right {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+.lbl-mensaje {
+    margin-left:15px;
+    color: red; 
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+    .left-content {
+        padding: 15px;
+        flex-direction: revert;
+    }
+
+    .container-login {
+        padding: 15px;
+        gap: 0px;
+    }
+}

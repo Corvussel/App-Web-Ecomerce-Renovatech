@@ -1,0 +1,133 @@
+﻿@model Web_ExclusivedFood.Models.Producto.PedidoProducto
+@{
+    ViewBag.Title = "RealizarReseña";
+}
+<link href="~/Content/css/Reviews.css" rel="stylesheet" />
+
+<header class="reviews-header">
+    <div class="container">
+        <h1>Escribir una Reseña</h1>
+    </div>
+</header>
+
+
+@using (Html.BeginForm("RealizarReseña", "Reseñas", FormMethod.Post))
+{
+    <input type="hidden" name="IdProducto" value="@Model.IdProducto" />
+    <input type="hidden" name="IdUsuario" value="@Model.IdUsuario" /> 
+    <input type="hidden" name="Calificacion" id="Calificacion" /> 
+
+    <div class="container">
+        <div class="review-card">
+
+            <!-- Informacion del producto -->
+            <div class="product-info">
+                <img src="@ViewBag.UrlImagen" alt="Producto" class="product-image">
+                <div>
+                    <h3>@ViewBag.NombreProducto</h3>
+                    <div class="purchase-info mt-2">
+                        <i class="fas fa-check-circle text-success"></i>
+                        @Model.FechaTransaccion.ToString("'Comprado el' d 'de' MMMM, yyyy", new System.Globalization.CultureInfo("es-ES"))
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de reseña -->
+            <form class="review-form">
+
+                <div class="mb-4 d-flex justify-content-center">
+                    <div class="mb-4">
+                        <label>¿Cómo valorarías este producto?</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5" class="fas fa-star"></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" class="fas fa-star"></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" class="fas fa-star"></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" class="fas fa-star"></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" class="fas fa-star"></label>
+                        </div>
+                        <div class="rating-hints gap-2">
+                            <span>Malo</span>
+                            <span>Regular</span>
+                            <span>Bueno</span>
+                            <span>Muy bueno</span>
+                            <span>Excelente</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Titulo de la reseña -->
+                <div class="mb-4">
+                    <label for="reviewTitle">Título de tu reseña</label>
+                    <input type="text" class="form-control" name="TituloReseña" id="reviewTitle" placeholder="Resume tu opinión en una frase" maxlength="40">
+                </div>
+
+                <!-- Texto de la reseña -->
+                <div class="mb-4">
+                    <label for="reviewText">Tu reseña detallada</label>
+                    <textarea class="form-control" name="ReseñaProducto" id="reviewText" rows="5" maxlength="250" placeholder="¿Qué te gustó o no te gustó?">@Model.IdUsuario</textarea>
+                    <div class="form-text">Mínimo 50 caracteres</div>
+                </div>
+
+
+
+                <!-- Recomendar producto -->
+                <div class="mb-4">
+                    <label>¿Recomendarías este producto?</label>
+                    <div class="d-flex gap-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="recommend" id="recommendYes">
+                            <label class="form-check-label" for="recommendYes">
+                                Sí
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="recommend" id="recommendNo">
+                            <label class="form-check-label" for="recommendNo">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botones -->
+                <div class="d-flex gap-3">
+                    <button type="submit" class="btn btn-custom-primary">
+                        <i class="fas fa-paper-plane me-2"></i>Publicar Reseña
+                    </button>
+                    <button type="button" class="btn btn-custom-secondary">
+                        Omitir
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+}
+
+<script>
+
+    const elementos = Array.from(document.getElementsByName('rating'));
+    const calificacion = document.getElementById('Calificacion')
+
+    elementos.forEach(function (elemento) {
+        elemento.addEventListener('click', function () {
+            calificacion.value = elemento.value;
+        });
+    });
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        var mensaje = '@TempData["Mensaje"]';
+        if (mensaje) {
+            toastr.success(mensaje);
+        }
+    });
+</script>
